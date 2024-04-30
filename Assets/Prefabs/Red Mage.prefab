@@ -12,13 +12,13 @@ GameObject:
   - component: {fileID: 3484279428531569732}
   - component: {fileID: 5633559238271157262}
   - component: {fileID: 7446550515363610615}
-  - component: {fileID: 6160538686319448752}
+  - component: {fileID: 299373491150519678}
   - component: {fileID: 3728229128591955300}
   - component: {fileID: 488566790563665393}
   - component: {fileID: 8813112440451124476}
   m_Layer: 0
   m_Name: Red Mage
-  m_TagString: Untagged
+  m_TagString: Red
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,7 +110,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6160538686319448752
+--- !u!114 &299373491150519678
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,8 +132,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     stateMachine: {fileID: 0}
-    targetFoundState: 
-  hammerTimeState:
+    targetFoundState: WandTimeState
+  wandTimeState:
     stateStart:
       m_PersistentCalls:
         m_Calls: []
@@ -141,9 +141,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     stateMachine: {fileID: 0}
-    hammer: {fileID: 0}
-    wand: {fileID: 6672366126001431153}
-    cross: {fileID: 0}
+    wand: {fileID: 5027606829547627589, guid: d989a48686b03d70e8a2fc77502eaddd, type: 3}
 --- !u!114 &3728229128591955300
 MonoBehaviour:
   m_ObjectHideFlags: 0

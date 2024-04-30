@@ -6,11 +6,11 @@ using SuperPupSystems.StateMachine;
 public class MageStateMachine : SimpleStateMachine
 {
     public IdleState idleState;
-    public HammerTimeState hammerTimeState;
+    public WandTimeState wandTimeState;
     void Awake()
     {
         states.Add(idleState);
-        states.Add(hammerTimeState);
+        states.Add(wandTimeState);
 
         //ChangeState(nameof(idleState));
     }

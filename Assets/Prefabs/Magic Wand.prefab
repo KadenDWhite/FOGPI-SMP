@@ -93,6 +93,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6305534866199956420}
   - component: {fileID: 1765811704465487723}
+  - component: {fileID: -6408332055359156657}
   m_Layer: 0
   m_Name: Magic Wand
   m_TagString: Untagged
@@ -131,6 +132,27 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   castInterval: 2
   magicPrefab: {fileID: 7527626037832989579, guid: 96558383c1d1a2615af5f6123b880278, type: 3}
+--- !u!95 &-6408332055359156657
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5027606829547627589}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3f680d383685c4844bf9ed0606ef959c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &5301348760215530559
 GameObject:
   m_ObjectHideFlags: 0

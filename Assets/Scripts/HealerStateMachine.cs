@@ -7,12 +7,12 @@ public class HealerStateMachine : SimpleStateMachine
 {
     public IdleState idleState;
     public ChaseState chaseState;
-    public HammerTimeState hammerTimeState;
+    public HealingTimeState healingTimeState;
     void Awake()
     {
         states.Add(idleState);
         states.Add(chaseState);
-        states.Add(hammerTimeState);
+        states.Add(healingTimeState);
 
         ChangeState(nameof(idleState));
     }

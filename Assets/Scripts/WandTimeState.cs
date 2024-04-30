@@ -5,9 +5,10 @@ using SuperPupSystems.StateMachine;
 using Unity.VisualScripting;
 
 [System.Serializable]
-public class HammerTimeState : SimpleState
+public class WandTimeState : SimpleState
 {
-    public GameObject hammer;
+    public GameObject wand;
+    //public GameObject cross;
     private GameObject gameObject;
     private Vector3 targetRotation;
     private Vector3 beginningRotation;
@@ -17,16 +18,24 @@ public class HammerTimeState : SimpleState
         time = 0.0f;
         gameObject = stateMachine.gameObject;
 
-        if (hammer == false)
+        if (wand == false)
             return;
         
-        hammer.GetComponent<Animator>().Play("Hammer");
+        wand.GetComponent<Animator>().Play("Wand");
+
+        //if (cross == false)
+          //  return;
+        
+        //cross.GetComponent<Animator>().Play("Healer");
     }
 
     public override void UpdateState(float _dt)
     {
-        if (hammer == false)
+        if (wand == false)
             return;
+
+       // if (cross == false)
+           // return;
         
         time += _dt;
 

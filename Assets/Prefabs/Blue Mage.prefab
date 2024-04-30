@@ -12,14 +12,14 @@ GameObject:
   - component: {fileID: 5160548675885738795}
   - component: {fileID: 1864367081219201433}
   - component: {fileID: 3397986050413979122}
-  - component: {fileID: 5761626707616016703}
+  - component: {fileID: 4869333027030803233}
   - component: {fileID: 3996883162315472102}
   - component: {fileID: 9042025124660313603}
   - component: {fileID: 8485396691394519465}
   - component: {fileID: 3750937310222763251}
   m_Layer: 0
   m_Name: Blue Mage
-  m_TagString: Untagged
+  m_TagString: Blue
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -111,7 +111,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5761626707616016703
+--- !u!114 &4869333027030803233
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -133,8 +133,8 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     stateMachine: {fileID: 0}
-    targetFoundState: 
-  hammerTimeState:
+    targetFoundState: WandTimeState
+  wandTimeState:
     stateStart:
       m_PersistentCalls:
         m_Calls: []
@@ -142,9 +142,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls: []
     stateMachine: {fileID: 0}
-    hammer: {fileID: 0}
-    wand: {fileID: 7131984821622273001}
-    cross: {fileID: 0}
+    wand: {fileID: 5027606829547627589, guid: d989a48686b03d70e8a2fc77502eaddd, type: 3}
 --- !u!114 &3996883162315472102
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,7 +223,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   castInterval: 2
-  magicPrefab: {fileID: 4718984922486425623}
+  magicPrefab: {fileID: 3451317846609833154, guid: e18d9af63709d27b3b180892b4ad2500, type: 3}
 --- !u!1001 &2827209083466438572
 PrefabInstance:
   m_ObjectHideFlags: 0
