@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1eadd0f3ae0403a4a5c07d3b1d611e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 10
+  range: 22
   targetTag: Blue
 --- !u!114 &1045245998358183240
 MonoBehaviour:
@@ -188,7 +188,7 @@ MonoBehaviour:
       - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: SuperPupSystems.Helper.Health, Assembly-CSharp
         m_MethodName: Heal
-        m_Mode: 0
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

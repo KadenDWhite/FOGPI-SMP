@@ -8,7 +8,6 @@ using Unity.VisualScripting;
 public class WandTimeState : SimpleState
 {
     public GameObject wand;
-    //public GameObject cross;
     private GameObject gameObject;
     private Vector3 targetRotation;
     private Vector3 beginningRotation;
@@ -22,20 +21,12 @@ public class WandTimeState : SimpleState
             return;
         
         wand.GetComponent<Animator>().Play("Wand");
-
-        //if (cross == false)
-          //  return;
-        
-        //cross.GetComponent<Animator>().Play("Healer");
     }
 
     public override void UpdateState(float _dt)
     {
         if (wand == false)
             return;
-
-       // if (cross == false)
-           // return;
         
         time += _dt;
 

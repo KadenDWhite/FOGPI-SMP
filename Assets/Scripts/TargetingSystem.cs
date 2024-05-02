@@ -22,9 +22,11 @@ public class TargetingSystem : MonoBehaviour
             {
                 closetDistance = distance;
                 target = pt;
+                
             }
+            
         }
-
+        Debug.Log("Target is: ", target);
         return target;
     }
 }
