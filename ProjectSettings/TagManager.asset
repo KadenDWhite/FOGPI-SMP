@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Red
   - Blue
+  - Blue Healer
+  - Red Healer
   layers:
   - Default
   - TransparentFX
