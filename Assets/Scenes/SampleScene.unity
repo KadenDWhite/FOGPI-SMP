@@ -5307,6 +5307,10 @@ PrefabInstance:
       propertyPath: healed.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1273409119}
+    - target: {fileID: 6794722714203042655, guid: 98e7c847a62d4f140aa0e543d37d4186, type: 3}
+      propertyPath: healParticles
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 6841766253813030830, guid: 98e7c847a62d4f140aa0e543d37d4186, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.6105076

@@ -15,7 +15,6 @@ GameObject:
   - component: {fileID: 299373491150519678}
   - component: {fileID: 3728229128591955300}
   - component: {fileID: 488566790563665393}
-  - component: {fileID: 8813112440451124476}
   m_Layer: 0
   m_Name: Red Mage
   m_TagString: Red
@@ -194,20 +193,6 @@ MonoBehaviour:
         m_CallState: 2
   maxHealth: 100
   currentHealth: 100
---- !u!114 &8813112440451124476
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4161315611107110188}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a8db8026449c1d4ea15994bedd79f1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  castInterval: 2
-  magicPrefab: {fileID: 7527626037832989579, guid: 96558383c1d1a2615af5f6123b880278, type: 3}
 --- !u!1001 &1827516306365711924
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -274,6 +259,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5301348760215530559, guid: d989a48686b03d70e8a2fc77502eaddd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1402159736994513090}
+    - targetCorrespondingSourceObject: {fileID: 5301348760215530559, guid: d989a48686b03d70e8a2fc77502eaddd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3066593908902062794}
+    - targetCorrespondingSourceObject: {fileID: 5301348760215530559, guid: d989a48686b03d70e8a2fc77502eaddd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7770535343495607732}
   m_SourcePrefab: {fileID: 100100000, guid: d989a48686b03d70e8a2fc77502eaddd, type: 3}
 --- !u!4 &5682811454057205232 stripped
 Transform:
@@ -297,6 +288,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b2a53cdd3b9dce4ab704ccebc5d77da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3066593908902062794
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5822741975378635275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a29bb06b940534f883a249592ce143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magicParticlePrefab: {fileID: 5774681406644877918}
+  staffCrystal: {fileID: 8397781297906921559}
+  emitInterval: 2
+--- !u!114 &7770535343495607732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5822741975378635275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a8db8026449c1d4ea15994bedd79f1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  castInterval: 2
+  magicPrefab: {fileID: 7527626037832989579, guid: 96558383c1d1a2615af5f6123b880278, type: 3}
 --- !u!1 &6672366126001431153 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5027606829547627589, guid: d989a48686b03d70e8a2fc77502eaddd, type: 3}
@@ -400,5 +420,10 @@ PrefabInstance:
 --- !u!4 &4228273295872027937 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8892365160199005932, guid: 96558383c1d1a2615af5f6123b880278, type: 3}
+  m_PrefabInstance: {fileID: 4739439197323021261}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &5774681406644877918 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 1289741373190091155, guid: 96558383c1d1a2615af5f6123b880278, type: 3}
   m_PrefabInstance: {fileID: 4739439197323021261}
   m_PrefabAsset: {fileID: 0}

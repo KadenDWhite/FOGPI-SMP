@@ -298,12 +298,6 @@ PrefabInstance:
       addedObject: {fileID: 1047783213655369014}
     - targetCorrespondingSourceObject: {fileID: 44311010284741897, guid: 7ef1e31643a69e3db902eb56a7906d4f, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 3300766655503668609}
-    - targetCorrespondingSourceObject: {fileID: 44311010284741897, guid: 7ef1e31643a69e3db902eb56a7906d4f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 6324944398616087650}
-    - targetCorrespondingSourceObject: {fileID: 44311010284741897, guid: 7ef1e31643a69e3db902eb56a7906d4f, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 6311704518703023269}
     - targetCorrespondingSourceObject: {fileID: 44311010284741897, guid: 7ef1e31643a69e3db902eb56a7906d4f, type: 3}
       insertIndex: -1
@@ -317,34 +311,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 44311010284741897, guid: 7ef1e31643a69e3db902eb56a7906d4f, type: 3}
   m_PrefabInstance: {fileID: 2100108924258917800}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &3300766655503668609
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2141595014293993633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3e14dd8f7cf8b94292debfa81c7c488, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tagToHeal: Blue
-  healed: 10
---- !u!114 &6324944398616087650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2141595014293993633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c3e14dd8f7cf8b94292debfa81c7c488, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tagToHeal: Blue
-  healed: 10
 --- !u!114 &6311704518703023269
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -357,8 +323,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c3e14dd8f7cf8b94292debfa81c7c488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tagToHeal: Blue
-  healed: 10
+  allyTag: Blue
+  healedAmount: 10
+  healParticles: {fileID: 3928564032997056729}
+  healAnimator: {fileID: 1047783213655369014}
 --- !u!198 &3928564032997056729
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -613,7 +581,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.3
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -666,7 +634,7 @@ ParticleSystem:
     startSizeY:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.3
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -719,7 +687,7 @@ ParticleSystem:
     startSizeZ:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.3
       minScalar: 1
       maxCurve:
         serializedVersion: 2

@@ -15,8 +15,6 @@ GameObject:
   - component: {fileID: 4869333027030803233}
   - component: {fileID: 3996883162315472102}
   - component: {fileID: 9042025124660313603}
-  - component: {fileID: 8485396691394519465}
-  - component: {fileID: 3750937310222763251}
   m_Layer: 0
   m_Name: Blue Mage
   m_TagString: Blue
@@ -195,35 +193,6 @@ MonoBehaviour:
         m_CallState: 2
   maxHealth: 100
   currentHealth: 100
---- !u!114 &8485396691394519465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4973867165541317239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67a29bb06b940534f883a249592ce143, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magicParticlePrefab: {fileID: 8816037377606762889}
-  staffCrystal: {fileID: 5398142855565205967}
-  emitInterval: 2
---- !u!114 &3750937310222763251
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4973867165541317239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a8db8026449c1d4ea15994bedd79f1d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  castInterval: 2
-  magicPrefab: {fileID: 3451317846609833154, guid: e18d9af63709d27b3b180892b4ad2500, type: 3}
 --- !u!1001 &2827209083466438572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -294,6 +263,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5301348760215530559, guid: d989a48686b03d70e8a2fc77502eaddd, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1034735406516552521}
+    - targetCorrespondingSourceObject: {fileID: 5301348760215530559, guid: d989a48686b03d70e8a2fc77502eaddd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1103299980845758223}
+    - targetCorrespondingSourceObject: {fileID: 5301348760215530559, guid: d989a48686b03d70e8a2fc77502eaddd, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2428712086514059037}
   m_SourcePrefab: {fileID: 100100000, guid: d989a48686b03d70e8a2fc77502eaddd, type: 3}
 --- !u!4 &5398142855565205967 stripped
 Transform:
@@ -343,6 +318,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4b2a53cdd3b9dce4ab704ccebc5d77da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1103299980845758223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7975434253726710675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a29bb06b940534f883a249592ce143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  magicParticlePrefab: {fileID: 8816037377606762889}
+  staffCrystal: {fileID: 5398142855565205967}
+  emitInterval: 2
+--- !u!114 &2428712086514059037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7975434253726710675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a8db8026449c1d4ea15994bedd79f1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  castInterval: 2
+  magicPrefab: {fileID: 3451317846609833154, guid: e18d9af63709d27b3b180892b4ad2500, type: 3}
 --- !u!4 &8123791293919140968 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6305534866199956420, guid: d989a48686b03d70e8a2fc77502eaddd, type: 3}

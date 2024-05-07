@@ -26,7 +26,7 @@ public class TargetingSystem : MonoBehaviour
             }
             
         }
-        Debug.Log("Target is: ", target);
+        Debug.Log("Target is: " + (target != null ? target.name : "None"));
         return target;
     }
 }
