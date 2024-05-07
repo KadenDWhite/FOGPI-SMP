@@ -15,16 +15,18 @@ public class MagicCaster : MonoBehaviour
         StartCoroutine(CastMagicCoroutine());
     }
 
-    private void OnDestroy()
-    {
-        // Stop the coroutine when the GameObject is destroyed
-        isRunning = false;
-    }
-
     private IEnumerator CastMagicCoroutine()
     {
         while (isRunning)
         {
+            // Check if there are any enemies in the scene
+            if (!AreThereEnemiesWithTag("Red") && !AreThereEnemiesWithTag("Blue"))
+            {
+                // If no enemies are found, stop casting magic
+                isRunning = false;
+                yield break; // Exit coroutine
+            }
+
             // Check if the magicPrefab is not null
             if (magicPrefab != null)
             {
@@ -35,5 +37,15 @@ public class MagicCaster : MonoBehaviour
             // Wait for the specified interval before casting magic again
             yield return new WaitForSeconds(castInterval);
         }
+    }
+
+    // Function to check if there are enemies in the scene with the specified tag
+    private bool AreThereEnemiesWithTag(string tag)
+    {
+        // Find all GameObjects with the specified tag
+        GameObject[] enemies = GameObject.FindGameObjectsWithTag(tag);
+        
+        // If there are no GameObjects with the specified tag, return false
+        return enemies.Length > 0;
     }
 }
