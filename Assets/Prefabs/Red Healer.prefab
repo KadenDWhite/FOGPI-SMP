@@ -317,7 +317,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allyTag: Red
-  healedAmount: 2
+  healingRange: 5
+  healedAmount: 10
   healCooldown: 1
   healParticles: {fileID: 0}
   healAnimator: {fileID: 7153628159388104264}

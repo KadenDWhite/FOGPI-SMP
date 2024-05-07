@@ -11,21 +11,24 @@ public class TargetingSystem : MonoBehaviour
     {
         GameObject target = null;
 
-        List<GameObject> posibleTargets = GameObject.FindGameObjectsWithTag(targetTag).ToList<GameObject>();
+        // Find all objects with the specified tag
+        List<GameObject> possibleTargets = GameObject.FindGameObjectsWithTag(targetTag).ToList<GameObject>();
 
-        float closetDistance = float.MaxValue;
-        foreach(GameObject pt in posibleTargets)
+        // Remove the attacker from the list of possible targets
+        possibleTargets.Remove(gameObject); // Assuming the attacker is attached to the GameObject using this script
+
+        float closestDistance = float.MaxValue;
+        foreach(GameObject pt in possibleTargets)
         {
             float distance = Vector3.Distance(pt.transform.position, transform.position);
 
-            if (distance < closetDistance)
+            if (distance < closestDistance)
             {
-                closetDistance = distance;
+                closestDistance = distance;
                 target = pt;
-                
             }
-            
         }
+
         Debug.Log("Target is: " + (target != null ? target.name : "None"));
         return target;
     }

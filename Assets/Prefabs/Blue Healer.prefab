@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1eadd0f3ae0403a4a5c07d3b1d611e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  range: 22
+  range: 44
   targetTag: Blue
 --- !u!114 &1045245998358183240
 MonoBehaviour:
@@ -312,7 +312,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   allyTag: Blue
-  healedAmount: 2
+  healingRange: 5
+  healedAmount: 10
   healCooldown: 1
   healParticles: {fileID: 3928564032997056729}
   healAnimator: {fileID: 1047783213655369014}
